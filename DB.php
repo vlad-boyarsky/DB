@@ -23,7 +23,7 @@ class DB
             echo sprintf("Success connection to %s", $this->dbName);
 
         } catch (Exception $error) {
-            $output = 'Technical problems, please come later ' . $error->getMessage();
+            $output = 'Connect error ' . $error->getMessage();
             die($output);
         }
     }
