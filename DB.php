@@ -14,7 +14,7 @@ class DB
         $this->password = $password;
     }
 
-    public function connect()
+    public function connect(): void
     {
         try {
             $db = new PDO('mysql:host=localhost;dbname='.$this->dbName, $this->userName, $this->password);
